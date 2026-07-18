@@ -1,0 +1,301 @@
+{
+  "built": "2026-07-02",
+  "baseline_check": {
+    "pass": true,
+    "cv_mean_air": 0.155,
+    "cv_mean_road": 0.0952
+  },
+  "robustness": {
+    "pre_covid": {
+      "label": "pre_covid_to_2019Q4",
+      "cv_by_geo": [
+        {
+          "geo": "DE",
+          "air": 0.021,
+          "road": 0.0242
+        },
+        {
+          "geo": "IT",
+          "air": 0.0464,
+          "road": 0.0186
+        },
+        {
+          "geo": "ES",
+          "air": 0.1133,
+          "road": 0.0447
+        },
+        {
+          "geo": "NL",
+          "air": 0.0359,
+          "road": 0.0333
+        },
+        {
+          "geo": "PL",
+          "air": 0.0959,
+          "road": 0.1119
+        },
+        {
+          "geo": "FR",
+          "air": 0.0729,
+          "road": 0.0412
+        }
+      ],
+      "cv_mean_air": 0.0642,
+      "cv_mean_road": 0.0456,
+      "cv_ratio": 1.41,
+      "levene_stat": 56.77,
+      "levene_p": 2.385855835785382e-13,
+      "chg_std_air": 0.0287,
+      "chg_std_road": 0.0131,
+      "n_air_levels": 252,
+      "n_air_changes": 246,
+      "n_road_changes": 246
+    },
+    "ex_covid": {
+      "label": "ex_covid_drop_2020_2022",
+      "cv_by_geo": [
+        {
+          "geo": "DE",
+          "air": 0.1069,
+          "road": 0.1059
+        },
+        {
+          "geo": "IT",
+          "air": 0.2515,
+          "road": 0.0476
+        },
+        {
+          "geo": "ES",
+          "air": 0.1139,
+          "road": 0.0728
+        },
+        {
+          "geo": "NL",
+          "air": 0.0691,
+          "road": 0.1081
+        },
+        {
+          "geo": "PL",
+          "air": 0.1219,
+          "road": 0.1576
+        },
+        {
+          "geo": "FR",
+          "air": 0.0972,
+          "road": 0.0711
+        }
+      ],
+      "cv_mean_air": 0.1268,
+      "cv_mean_road": 0.0938,
+      "cv_ratio": 1.35,
+      "levene_stat": 72.92,
+      "levene_p": 1.4475090650616667e-16,
+      "chg_std_air": 0.032,
+      "chg_std_road": 0.0129,
+      "n_air_levels": 277,
+      "n_air_changes": 265,
+      "n_road_changes": 265
+    }
+  },
+  "backtest_air": {
+    "pooled": {
+      "n_geo_years": 85,
+      "mean_edge_pct": 1.83,
+      "median_edge_pct": 1.04,
+      "hit_rate_pct": 75.3,
+      "worst": {
+        "geo": "FR",
+        "year": 2023,
+        "edge_pct": -9.92
+      },
+      "best": {
+        "geo": "FR",
+        "year": 2020,
+        "edge_pct": 17.98
+      }
+    },
+    "per_geo": [
+      {
+        "geo": "DE",
+        "mean": 2.34,
+        "hit": 88.89,
+        "n": 9
+      },
+      {
+        "geo": "IT",
+        "mean": 3.28,
+        "hit": 85.71,
+        "n": 14
+      },
+      {
+        "geo": "ES",
+        "mean": 2.0,
+        "hit": 89.47,
+        "n": 19
+      },
+      {
+        "geo": "NL",
+        "mean": 4.13,
+        "hit": 100.0,
+        "n": 7
+      },
+      {
+        "geo": "PL",
+        "mean": 0.65,
+        "hit": 66.67,
+        "n": 18
+      },
+      {
+        "geo": "FR",
+        "mean": 0.54,
+        "hit": 44.44,
+        "n": 18
+      }
+    ],
+    "operational_lock_variant": {
+      "n_geo_years": 79,
+      "mean_edge_pct": 2.96,
+      "hit_rate_pct": 72.2
+    },
+    "definition": "edge = (mean(Q2,Q3) - mean(Q1,Q4)) / year mean * 100, per geo-year, complete years in the common window"
+  },
+  "backtest_road_contrast": {
+    "n_geo_years": 87,
+    "mean_edge_pct": 0.36,
+    "median_edge_pct": 0.16,
+    "hit_rate_pct": 62.1,
+    "worst": {
+      "geo": "ES",
+      "year": 2009,
+      "edge_pct": -1.77
+    },
+    "best": {
+      "geo": "ES",
+      "year": 2022,
+      "edge_pct": 3.88
+    }
+  },
+  "out_of_sample_air": {
+    "coverage": {
+      "DE": [
+        "2024-03-31",
+        "2025-12-31",
+        8
+      ],
+      "ES": [
+        "2024-03-31",
+        "2025-12-31",
+        8
+      ],
+      "FR": [
+        "2024-03-31",
+        "2026-03-31",
+        9
+      ],
+      "IT": [
+        "2024-03-31",
+        "2025-12-31",
+        8
+      ],
+      "NL": [
+        "2024-03-31",
+        "2025-12-31",
+        8
+      ],
+      "PL": [
+        "2024-03-31",
+        "2025-12-31",
+        8
+      ]
+    },
+    "per_geo_year": [
+      {
+        "geo": "DE",
+        "year": 2024,
+        "q2_qoq_pct": 3.06,
+        "midyear_premium_pct": -0.2
+      },
+      {
+        "geo": "DE",
+        "year": 2025,
+        "q2_qoq_pct": 0.3,
+        "midyear_premium_pct": -1.23
+      },
+      {
+        "geo": "IT",
+        "year": 2024,
+        "q2_qoq_pct": 8.51,
+        "midyear_premium_pct": 5.02
+      },
+      {
+        "geo": "IT",
+        "year": 2025,
+        "q2_qoq_pct": 7.52,
+        "midyear_premium_pct": 6.22
+      },
+      {
+        "geo": "ES",
+        "year": 2024,
+        "q2_qoq_pct": 10.97,
+        "midyear_premium_pct": 7.41
+      },
+      {
+        "geo": "ES",
+        "year": 2025,
+        "q2_qoq_pct": 12.62,
+        "midyear_premium_pct": 10.09
+      },
+      {
+        "geo": "NL",
+        "year": 2024,
+        "q2_qoq_pct": 8.58,
+        "midyear_premium_pct": 5.83
+      },
+      {
+        "geo": "NL",
+        "year": 2025,
+        "q2_qoq_pct": 4.67,
+        "midyear_premium_pct": 4.36
+      },
+      {
+        "geo": "PL",
+        "year": 2024,
+        "q2_qoq_pct": 2.35,
+        "midyear_premium_pct": 1.44
+      },
+      {
+        "geo": "PL",
+        "year": 2025,
+        "q2_qoq_pct": -1.18,
+        "midyear_premium_pct": -0.62
+      },
+      {
+        "geo": "FR",
+        "year": 2024,
+        "q2_qoq_pct": 0.12,
+        "midyear_premium_pct": -5.71
+      },
+      {
+        "geo": "FR",
+        "year": 2025,
+        "q2_qoq_pct": -8.65,
+        "midyear_premium_pct": -7.95
+      }
+    ],
+    "q2_rise_hit_rate_pct": 83.3,
+    "premium_positive_hit_rate_pct": 58.3,
+    "mean_q2_qoq_pct": 4.07,
+    "mean_midyear_premium_pct": 2.06,
+    "q1_2026_softness": [
+      {
+        "geo": "FR",
+        "q1_2026_qoq_pct": 2.9
+      }
+    ]
+  },
+  "figures": [
+    "fig13_tender_backtest.png",
+    "fig14_oos_seasonal.png",
+    "fig15_robustness_cv.png"
+  ]
+}

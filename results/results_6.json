@@ -1,0 +1,113 @@
+{
+  "n_states": 6,
+  "states": [
+    "DE",
+    "IT",
+    "ES",
+    "NL",
+    "PL",
+    "FR"
+  ],
+  "common_windows": {
+    "DE": [
+      "2015-03-31",
+      "2023-12-31"
+    ],
+    "IT": [
+      "2010-03-31",
+      "2023-12-31"
+    ],
+    "ES": [
+      "2005-03-31",
+      "2023-12-31"
+    ],
+    "NL": [
+      "2015-03-31",
+      "2023-12-31"
+    ],
+    "PL": [
+      "2006-03-31",
+      "2023-12-31"
+    ],
+    "FR": [
+      "2006-03-31",
+      "2024-03-31"
+    ]
+  },
+  "cv_by_geo": [
+    {
+      "geo": "DE",
+      "air": 0.148,
+      "road": 0.0992
+    },
+    {
+      "geo": "IT",
+      "air": 0.2821,
+      "road": 0.0529
+    },
+    {
+      "geo": "ES",
+      "air": 0.1081,
+      "road": 0.0791
+    },
+    {
+      "geo": "NL",
+      "air": 0.0859,
+      "road": 0.0988
+    },
+    {
+      "geo": "PL",
+      "air": 0.1196,
+      "road": 0.1672
+    },
+    {
+      "geo": "FR",
+      "air": 0.186,
+      "road": 0.0741
+    }
+  ],
+  "cv_mean_air": 0.155,
+  "cv_mean_road": 0.0952,
+  "cv_ratio": 1.63,
+  "levene_pooled": {
+    "stat": 65.0344,
+    "p": 3.3105446987503768e-15,
+    "air_std": 0.0534,
+    "road_std": 0.0158,
+    "n_air": 341,
+    "n_road": 343
+  },
+  "kruskal_air": {
+    "stat": 49.5599,
+    "p": 9.913518770442751e-11,
+    "means": {
+      "Q1": -0.97,
+      "Q2": 3.2,
+      "Q3": 1.49,
+      "Q4": -0.78
+    },
+    "peak": "Q2"
+  },
+  "kruskal_road": {
+    "stat": 17.5652,
+    "p": 0.0005406634299852508,
+    "means": {
+      "Q1": 0.27,
+      "Q2": 0.99,
+      "Q3": 0.95,
+      "Q4": 0.23
+    },
+    "peak": "Q2"
+  },
+  "intra_year_band_air": 6.71,
+  "intra_year_band_road": 2.78,
+  "seasonal_premium_air": 1.83,
+  "seasonal_premium_road": 0.36,
+  "baseline_5country": {
+    "cv_mean_air": 0.1487,
+    "cv_mean_road": 0.0994,
+    "cv_ratio": 1.5,
+    "levene_p": 8.196817114686646e-13
+  },
+  "france_source": "air=INSEE BDM 010766683 (CPF 51.21, base 2021, NSA); road=Eurostat H494 (I21, NSA)"
+}
