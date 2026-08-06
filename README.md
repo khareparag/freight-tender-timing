@@ -14,8 +14,8 @@ Spain, Netherlands, Poland, France), built on open Eurostat and INSEE series cov
 2003 to 2024. Every claim below is backed by a statistical test in the repo.
 
 ## Budget air as a band, not a point
-In a typical year air rates move inside a 6.7% band; road moves 2.8%. On 10 million euro
-of air spend that band is roughly 670,000 euro of rate movement a budget owner either
+In a typical year air rates move inside a 7.0% band; road moves 2.6%. On 10 million euro
+of air spend that band is roughly 703,000 euro of rate movement a budget owner either
 plans for or explains later. Road's narrow band is why it holds longer fixed terms
 comfortably; air wants shorter agreements, indexation, or both.
 
@@ -33,8 +33,10 @@ therefore ships with per-lane validation: segment by market, validate the lane, 
 contract.
 
 ## The working tool
-A self-built, five-tab monitor with a live budget-band what-if: enter an exposure, read
-the band in euros. It refreshes each quarter from the public sources.
+The delivered dashboard: [dashboard/Rate_Risk_Story.pbix](dashboard/Rate_Risk_Story.pbix), a nine-sheet
+Power BI monitor, verdict to actions, with a live spend what-if: set the air spend,
+read the band in euros. A self-built live monitor carries the same tests and refreshes
+each quarter from the public sources.
 Live monitor: https://khareparag.github.io/freight-rate-risk-monitor/
 Full write-up for category managers: https://rfq.ch/projects/tender-timing/
 
