@@ -11,7 +11,7 @@ Every freight category plan answers two questions, usually by habit: when do we 
 market, and how much room does the budget leave? This study answers both with twenty
 years of official EU rate data: air versus road across six EU markets (Germany, Italy,
 Spain, Netherlands, Poland, France), built on open Eurostat and INSEE series covering
-2003 to 2024. Every claim below is backed by a statistical test in the repo.
+2005 to 2024. Every claim below is backed by a statistical test in the repo.
 
 ## Budget air as a band, not a point
 In a typical year air rates move inside a 7.0% band; road moves 2.6%. On 10 million euro
@@ -33,10 +33,13 @@ therefore ships with per-lane validation: segment by market, validate the lane, 
 contract.
 
 ## The working tool
-The delivered dashboard: [dashboard/Rate_Risk_Story.pbix](dashboard/Rate_Risk_Story.pbix), a nine-sheet
-Power BI monitor, verdict to actions, with a live spend what-if: set the air spend,
-read the band in euros. A self-built live monitor carries the same tests and refreshes
-each quarter from the public sources.
+A ten-sheet Power BI monitor, verdict to actions.
+
+Open it live, no sign-in needed: https://app.powerbi.com/view?r=eyJrIjoiMjMxOTdkMjEtOTRiYi00MjJlLTgzNWQtNDQxNGQ4NDlmZDU5IiwidCI6IjYzNWM3N2Y5LTkxM2ItNDU5YS1hMmU5LWEzYTY3ZDFkNTIxMiJ9&pageName=ReportSectiond6382b440339abaec5beae51
+
+Power BI Desktop file: [dashboard/Rate_Risk_Story.pbix](dashboard/Rate_Risk_Story.pbix).
+A self-built live monitor carries the same tests and refreshes each quarter from the
+public sources.
 Live monitor: https://khareparag.github.io/freight-rate-risk-monitor/
 Full write-up for category managers: https://rfq.ch/projects/tender-timing/
 
